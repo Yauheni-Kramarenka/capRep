@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis.proto.openl.cap</groupId>
+        <artifactId>openl-cap-proto-parent-pom</artifactId>
+        <version>24.5-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>cap-financial</artifactId>
+    <packaging>openl</packaging>
+    <name>CAP Financial Rules</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openl.rules</groupId>
+                <artifactId>openl-maven-plugin</artifactId>
+                <extensions>true</extensions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.eisgroup.genesis.openl.integration.core</groupId>
+            <artifactId>openl-message-bundle-plugin</artifactId>
+            <classifier>extension</classifier>
+            <type>tile</type>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>
